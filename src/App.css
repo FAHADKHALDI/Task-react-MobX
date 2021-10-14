@@ -9,7 +9,10 @@ a {
   text-decoration: none;
 }
 #root {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-image: url("https://wallpaperaccess.com/full/2224368.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +21,7 @@ a {
 .__main {
   max-width: 90%;
   margin: auto;
-  background-color: #fff;
+  /* background-color: #fff; */
   min-height: 80vh;
   width: 100%;
   border-radius: 10px;
@@ -47,7 +50,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .btn:hover {
-  background-color: #4664ff;
+  background-color: #143747;
   color: #fff;
   transform: scale(1.02);
 }
@@ -88,17 +91,17 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b5bfe;
+  background: #143747;
 }
 
 .main__chatbody {
   flex-grow: 1;
-  background-color: #f4f3f8;
+  background-image: url("https://cdn.wallpapersafari.com/54/0/HluF7g.jpg");
   border-radius: 10px;
   padding: 15px 20px;
 }
 .main__chatlist {
-  border-right: 1px solid #ebe7fb;
+  border-right: 1px;
   padding: 0 40px 0 0px;
 }
 .chatlist__heading {
@@ -242,11 +245,11 @@ a {
 .main__chatcontent {
   flex-grow: 1;
   max-width: 100%;
-  border-right: 1px solid #ebe7fb;
+  border-right: 1px;
 }
 .content__header {
   padding-bottom: 15px;
-  border-bottom: 1px solid #ebe7fb;
+  border-bottom: 1px;
 }
 .current-chatting-user {
   display: flex;
@@ -304,12 +307,15 @@ a {
   padding: 1px;
 }
 .chat__item__content {
-  background-color: #4462ff;
+  background-color: #143747;
   color: #fff;
   padding: 15px;
   border-radius: 10px 10px 0 10px;
   max-width: 50%;
   min-width: 215px;
+  box-shadow: rgba(31, 83, 107, 0.4) 5px 5px, rgba(31, 83, 107, 0.3) 10px 10px,
+    rgba(31, 83, 107, 0.2) 15px 15px, rgba(31, 83, 107, 0.1) 20px 20px,
+    rgba(31, 83, 107, 0.05) 25px 25px;
 }
 .chat__item__content .chat__meta {
   justify-content: space-between;
@@ -318,7 +324,7 @@ a {
 }
 .chat__item__content .chat__meta span {
   font-size: 14px;
-  color: #8693d3;
+  color: grey;
   user-select: none;
 }
 .chat__msg {
@@ -361,7 +367,7 @@ a {
   outline: none;
   cursor: pointer;
   font-size: 16px;
-  color: #4665ff;
+  color: #143747;
   padding: 0;
   border-radius: 5px;
   line-height: 36px;
@@ -381,6 +387,10 @@ a {
   outline: none;
 }
 #sendMsgBtn {
-  background-color: #3b5bfe;
+  background-color: #143747;
   color: #fff;
+}
+
+#sendMsgBtn:hover {
+  background-color: #1f536b;
 }
